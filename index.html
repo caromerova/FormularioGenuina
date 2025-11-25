@@ -1,49 +1,70 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulario - Servicios de Uñas</title>
 
     <!-- Enlace al CSS externo -->
-    <link rel="stylesheet" href="css/styles.css">
-</head>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
 
-<body>
-
+  <body>
     <div class="container">
-        <h2>Reserva + Promos</h2>
+      <h2>Reserva + Promos</h2>
 
-        <form id="form">
+      <form id="form">
+        <label>Nombre:</label>
+        <input type="text" id="nombre" required />
 
-            <label>Nombre:</label>
-            <input type="text" id="nombre" required>
+        <label>WhatsApp:</label>
+        <input type="tel" id="telefono" placeholder="300 123 4567" required />
 
-            <label>WhatsApp:</label>
-            <input type="tel" id="telefono" placeholder="300 123 4567" required>
+        <label>Email:</label>
+        <input type="email" id="correo" />
 
-            <label>Email:</label>
-            <input type="email" id="correo">
-
-            <label>Servicios de interés:</label>
-            <div class="checkbox-group">
-                <label><input type="checkbox" name="interes" value="Uñas acrílicas"> Uñas acrílicas</label><br>
-                <label><input type="checkbox" name="interes" value="Manicure tradicional"> Manicure tradicional</label><br>
-                <label><input type="checkbox" name="interes" value="Manicure semipermanente"> Manicure semipermanente</label><br>
-                <label><input type="checkbox" name="interes" value="Pedicure"> Pedicure</label><br>
-                <label><input type="checkbox" name="interes" value="Decoraciones"> Decoraciones</label><br>
-            </div>
-
-            <button type="submit">Enviar</button>
-        </form>
-
-        <div class="success" id="success">
-            ¡Gracias! Tu registro fue enviado ✔
+        <label>Servicios de interés:</label>
+        <div class="checkbox-group">
+          <label
+            ><input type="checkbox" name="interes" value="Tradicional " />
+            Tradicional </label
+          ><br />
+          <label
+            ><input type="checkbox" name="interes" value="Sof gel" /> Sof
+            gel</label
+          ><br />
+          <label
+            ><input type="checkbox" name="interes" value="Poligel" />
+            Poligel </label
+          ><br />
+          <label
+            ><input
+              type="checkbox"
+              name="interes"
+              value="Nivelación base Ruber"
+            />
+            Nivelación base Ruber</label
+          ><br />
+          <label
+            ><input type="checkbox" name="interes" value="Diping " />
+            Diping </label
+          ><br />
+          <label
+            ><input type="checkbox" name="interes" value="Semipermanente " />
+            Semipermanente </label
+          ><br />
         </div>
+
+        <button type="submit">Enviar</button>
+      </form>
+
+      <div class="success" id="success">
+        ¡Gracias hermosa! 💅✨ Pronto te enviaremos promos, ideas y sorpresas de
+        GENUINA Nails.
+      </div>
     </div>
 
     <!-- Enlace al JS externo -->
     <script src="js/app.js"></script>
-
-</body>
+  </body>
 </html>
